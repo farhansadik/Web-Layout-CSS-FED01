@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        header {
+            background-color: #FDE997;
+            border: 3px solid #E08C20;
+            border-radius: 5px;
+            font-size: 20px;
+            grid-area: head;
+        }
+
+        .navigation {
+            background-color: #FDE997;
+            border: 3px solid #E08C20;
+            border-radius: 5px;
+            font-size: 20px;
+            grid-area: nav;
+        }
+
+        .article {
+            background-color: #FDE997;
+            border: 3px solid #E08C20;
+            border-radius: 5px;
+            font-size: 20px;
+            grid-area: art;
+        }
+
+        .sidebar {
+            background-color: #FDE997;
+            border: 3px solid #E08C20;
+            border-radius: 5px;
+            font-size: 20px;
+            grid-area: side;
+        }
+
+        .advertising {
+            background-color: #FDE997;
+            border: 3px solid #E08C20;
+            border-radius: 5px;
+            font-size: 20px;
+            grid-area: ad;
+        }
+
+        footer {
+            background-color: #FDE997;
+            border: 3px solid #E08C20;
+            border-radius: 5px;
+            font-size: 20px;
+            grid-area: foot;
+        }
+
+        body {
+            display: grid;
+            gap: 5px;
+
+            /* 
+            grid-template-areas: 
+            'header header header header header'
+            'menu main main right right'
+            'menu footer footer footer footer'
+            ;
+             */
+
+            grid-template-areas: 
+            'head head head head head head'
+            'nav side art art art ad'
+            'nav side art art art ad'
+            'nav side art art art ad'
+            'nav foot foot foot foot foot'
+            ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div>The header</div>
+    </header>
+    <main>
+        
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="grid_area.html">Grid Area</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        
+        <article class="article">
+            <h3>Main article area</h3>
+            <p>X</p>
+        </article>
+
+        <aside class="sidebar">
+            <div>Sidebar</div>
+        </aside>
+
+        <aside class="advertising">
+            <div>Advertising</div>
+        </aside>
+
+
+    </main>
+
+    <footer>
+        <div>The footer</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: dodgerblue;
+            
+            /* display: grid; */
+
+            /* grid-template-areas: 
+            'header header header header header'
+            'menu main main right right'
+            'menu footer footer footer footer'
+            ; */
+
+/* 
+            grid-template-areas:
+            'header header  header  header  header'
+            'menu   main    main    main   right'
+            'menu   main    main    main   right'
+            'footer footer  footer  footer  footer'
+            ;
+             */
+        }
+
+        main {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            grid-template-areas: 
+            'menu main right'
+            ;
+        }
+
+        header {
+            grid-area: header;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        main > nav {
+            grid-area: menu;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        main > article {
+            grid-area: main;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        main > aside {
+            grid-area: right;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="head">Header</div>
+    </header>
+    <main>
+        <nav>
+            <div class="menu">Menu</div>
+        </nav>
+        <article>
+            <div class="main">Main</div>
+        </article>
+        <aside>
+            <div class="right">Right</div>
+        </aside>
+    </main>
+    <footer>
+        <div class="foot">Footer</div>
+    </footer>
+</body>
+</html>
