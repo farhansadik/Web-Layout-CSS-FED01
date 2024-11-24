@@ -6,3 +6,6 @@ while i was learning web layout with css. here is my code.
 1. Media Query 
 2. Flex Layout 
 3. Grid Layout
+
+**Live View** <br>
+<https://web-layout-css-fed01.netlify.app/>
